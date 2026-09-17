@@ -1,20 +1,13 @@
-[![XX](https://img.shields.io/badge/XX-github-blue?logo=github)](https://github.com/XX)
+[![GitHub](https://img.shields.io/badge/GitHub-zJayZ2024-blue?logo=github)](https://github.com/zJayZ2024)
 
-I'm currently pursuing a Master's degree in XX at the Department of XX, XX University, XX.
+I am a student in Software Engineering at East China Normal University.
 
-#### Email  
-<code>XX@XX.XX</code>  
-<code>XX@XX.XX</code>
+#### Email
+<code>10235101531@stu.ecnu.edu.cn</code>
 
-#### Education  
-**XX University**, Master of XX (XX – XX)  
-• GPA: XX/XX  
+#### Education
+**East China Normal University**  
+Software Engineering, Student
 
-**XX University**, Exchange student <br>  
-• As a XX, represented my college as an outstanding student for a XX exchange program.  
-
-**XX University**, Honours Bachelor of XX (XX – XX)  
-• GPA: XX/XX (top XX%)  
-
-#### Research Interests  
-XX, XX, XX, XX.
+#### Research Interests
+Artificial Intelligence, AI Agents, Machine Learning.
