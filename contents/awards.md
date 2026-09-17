@@ -1,1 +1,1 @@
-- **Meritorious Winner (M Award)**, Mathematical Contest in Modeling (MCM), COMAP.
+- **Meritorious Winner**, 2026 Mathematical Contest in Modeling (MCM).
