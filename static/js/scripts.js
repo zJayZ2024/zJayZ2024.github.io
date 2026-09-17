@@ -1,9 +1,31 @@
 const content_dir = 'contents/'
 const config_file = 'config.yml'
-const section_names = ['home', 'awards', 'experience', 'publications'];
-
+const section_names = ['home', 'awards'];
 
 window.addEventListener('DOMContentLoaded', event => {
+
+    // Keep only the sections that currently contain real content.
+    ['experience', 'publications'].forEach(name => {
+        const section = document.getElementById(name);
+        if (section) section.remove();
+
+        const navLink = document.querySelector(`#navbarResponsive a[href="#${name}"]`);
+        if (navLink && navLink.parentElement) navLink.parentElement.remove();
+    });
+
+    // Use the current GitHub profile avatar.
+    const avatar = document.querySelector('#avatar img');
+    if (avatar) {
+        avatar.src = 'https://avatars.githubusercontent.com/u/181553458?v=4';
+        avatar.alt = 'Junzhe Zhang';
+    }
+
+    // Point footer links to the current GitHub profile and homepage repository.
+    const githubLink = document.getElementById('github-link');
+    if (githubLink) githubLink.href = 'https://github.com/zJayZ2024';
+
+    const licenseLink = document.getElementById('license-link');
+    if (licenseLink) licenseLink.href = 'https://github.com/zJayZ2024/zJayZ2024.github.io/blob/main/LICENSE';
 
     // Activate Bootstrap scrollspy on the main nav element
     const mainNav = document.body.querySelector('#mainNav');
@@ -27,7 +49,6 @@ window.addEventListener('DOMContentLoaded', event => {
         });
     });
 
-
     // Yaml
     fetch(content_dir + config_file)
         .then(response => response.text())
@@ -39,11 +60,9 @@ window.addEventListener('DOMContentLoaded', event => {
                 } catch {
                     console.log("Unknown id and value: " + key + "," + yml[key].toString())
                 }
-
             })
         })
         .catch(error => console.log(error));
-
 
     // Marked
     marked.use({ mangle: false, headerIds: false })
@@ -60,4 +79,4 @@ window.addEventListener('DOMContentLoaded', event => {
             .catch(error => console.log(error));
     })
 
-}); 
+});
